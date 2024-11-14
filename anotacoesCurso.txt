@@ -1,0 +1,16 @@
+Os comandos de git que foram falados nas aulas:
+
+1- Após criar a pasta do projeto no seu PC usar o comando:
+git init no terminal do vscode.
+2- Usar o comando git status quando precisar verificar o status dos arquivos.
+3- Toda vez que criar um repositorio no github, vir no vscode e digitar os seguintes comandos:
+3.1- usar git add . -> envia todos os arquivos da pasta do projeto para serem enviados para o github.
+3.2- usar git commit -m "mensagem" -> escreva uma mensagem para versionamento dos arquivos anteriormente adicionados para a primeira commit.
+4- git branch -M main -> para qual branch vai ser enviado os arquivos.
+5- git remote add origin https://..... -> o github vai te dar um url para sincronizar o envio dos arquivos para o servidor do github na branch que voce escolheu.
+6- git push -u origin main -> vai "empurrar" tudo que voce selecionou para o branch e sincronizar todas as alteracoes.
+---------------------------------------------------
+Sempre usar o "git status" para verificar se há alguma divergência entre os arquivos do projeto que estao no seu PC e os que se encontram no repostitorio do github.
+Caso voce crie alguma outro arquivo dentro do projeto ou modifique algum arquivo, use o "git add .", "git commit -m "mensagem"" e "git push".
+
+
