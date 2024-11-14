@@ -22,3 +22,17 @@ Caso voce precise usar dados sensiveis, usar o .gitignore. Voce cria um arquivo 
 Para resetar um branch usamos git reset --hard origin/main. Retorna pro estado do branch do ultimo commit feito.
 ----------------------------------------------------
 Branch é uma ramificacao da main exclusiva para voce trabalhar no desenvolvimento de uma feature nova e tratar erros e bugs caso acontençam.
+Com git branch (nome do branch novo) eu crio um novo
+git branch lista todos os branches disponiveis.
+git branch -d (nomedobranch) deleta uma branch
+git branch checkout <nome> troca de branch.
+git branch checkout -b <nome> troca de branch e cria uma nova ao mesmo tempo. Sempre commitar na branch exclusiva antes de mudar de branch para evitar problemas. Sempre quando voltar para a main usar o git pull quando for iniciar um trabalho de uma nova funcionalidade.
+Para unir branches usamos o comando git merge <nome da branch que iremos unir>
+---------------------------------------------
+O stash serve para salvar as modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código já feito. O git stash é o comando. O branch vai ser resetado para a versao que esta de acordo com o repositorio.
+Para recuperar a stash usamos git stash apply (numero da stash). Listamos com git stash list.
+Caso queria ver as modificações guardadas em cada stash: git stash show -p <numero da stash>
+Para limpar todas as stash: git stash clear.
+Para dropar somente 1 stash: git stash drop <numero>.
+-------------------------------------------
+Criando tags
