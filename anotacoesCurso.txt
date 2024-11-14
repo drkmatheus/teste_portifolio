@@ -36,3 +36,10 @@ Para limpar todas as stash: git stash clear.
 Para dropar somente 1 stash: git stash drop <numero>.
 -------------------------------------------
 Criando tags
+É usada para quanto queremos demarcar estagios do desenvolvimento. É um checkpoint de uma branch.
+Usamos: git tag -a v1.0 -m "mensagem". git tag -> lista as tags.
+git show <nome> : verifica o que tem na tag.
+git checkout <nome>: para mudar de tag.
+É usada para salvar um codigo em andamento para depois recuperarmos.
+Enviando tags para o repositorio:
+git push origin <nomedatag>.
