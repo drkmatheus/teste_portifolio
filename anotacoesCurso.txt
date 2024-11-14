@@ -11,6 +11,12 @@ git init no terminal do vscode.
 6- git push -u origin main -> vai "empurrar" tudo que voce selecionou para o branch e sincronizar todas as alteracoes.
 ---------------------------------------------------
 Sempre usar o "git status" para verificar se há alguma divergência entre os arquivos do projeto que estao no seu PC e os que se encontram no repostitorio do github.
-Caso voce crie alguma outro arquivo dentro do projeto ou modifique algum arquivo, use o "git add .", "git commit -m "mensagem"" e "git push".
-
-
+Caso voce crie alguma outro arquivo dentro do projeto ou modifique algum arquivo, use o "git add .", "git commit -a -m "mensagem"" e "git push".
+git pull pode ser usado para ver se houve alguma alteracao no repositorio.
+Para clonar um repositorio fazermos: "git clone https://...... .". Usamos quando entramos pela primeira vez num projeto já existente ou houve alguma mudanca nos arquivos do projeto.
+Para remover arquivos usamos: git rm (nome do arquivo). Depois devemos dar commit nessa deleçao. Depois devemos dar git push.
+git log dá um historico do alteracoes.
+Mover arquivos de lugar com: git mv (nome do arquivo) (novo local/nomeArquivo) depois damos commit e depois push. Para renomear é so nao especificar uma pasta nova, mas sim o nomeoriginal e novo nome.
+Para desfazer alteracoes: git checkout. Esse cancela alguma mudanca que voce tenha feito substituindo-o pelo o arquivo que ta na main.
+Caso voce precise usar dados sensiveis, usar o .gitignore. Voce cria um arquivo dentro da pasta do projeto com o nome .gitignore e dentro desse arquivo escreve o nome completo do arquivo que deseja ignorar, ou seja, nao o envia para o github por motivos de seguranca.
+Para resetar um branch usamos git reset --hard origin/main. Retorna pro estado do branch do ultimo commit feito.
