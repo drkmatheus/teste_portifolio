@@ -20,3 +20,5 @@ Mover arquivos de lugar com: git mv (nome do arquivo) (novo local/nomeArquivo) d
 Para desfazer alteracoes: git checkout. Esse cancela alguma mudanca que voce tenha feito substituindo-o pelo o arquivo que ta na main.
 Caso voce precise usar dados sensiveis, usar o .gitignore. Voce cria um arquivo dentro da pasta do projeto com o nome .gitignore e dentro desse arquivo escreve o nome completo do arquivo que deseja ignorar, ou seja, nao o envia para o github por motivos de seguranca.
 Para resetar um branch usamos git reset --hard origin/main. Retorna pro estado do branch do ultimo commit feito.
+----------------------------------------------------
+Branch é uma ramificacao da main exclusiva para voce trabalhar no desenvolvimento de uma feature nova e tratar erros e bugs caso acontençam.
