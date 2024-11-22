@@ -43,3 +43,57 @@ git checkout <nome>: para mudar de tag.
 É usada para salvar um codigo em andamento para depois recuperarmos.
 Enviando tags para o repositorio:
 git push origin <nomedatag>.
+-------------------------------------------------
+Encontrando branches
+git fetch - mapeia branches e tags que nao estao reconhecidos por voce.
+------------------------------------
+Recebendo alteracoes
+git pull serve para receber atualizacoes de um repositorio.
+----------------------------------
+enviando alteracoes
+git push - nessa situacao vai fazer o inverso do pull, seja para um branch ou repositório.
+-----------------------------
+Remote
+git remote permite adicionar um repositorio para dar track nele ou remover.
+-----------------------------
+Submódulos
+git submodule add <repositorio>
+É como fazemos para ter 2 ou mais projetos diferentes em um só repositorio.
+Para atualizar devemos usar git push --recurse-submodules=on-demand
+-------------------------------
+Analise e inspeçao
+git show - da informacoes do branch atual, seus commits e modificacoes de arquivos.
+--------------------------------
+Diferenças
+git diff - exibe diferencas de um branch.
+--------------------------------
+Log de atividades
+git shortlog - log resumido do projeto.
+------------------------------
+Limpando arquivos untracked
+git clean - limpa os arquivos nao trackeados (os que voce nao deu git add).
+----------------------------
+Garbage collector
+git gc - identifica arquivos que nao sai mais necessarios e os exclue.
+Usar caso seja necessario uma melhoria de performance do repositorio e se muita gente mexer no repositorio.
+-----------------------------
+git fsck - verifica a integridade de arquivos e sua conectividade verificando assim possíveis corrupções em arquivos.
+-----------------------------
+git reflog mapea todos os seus passos no repositório. Até uma
+mudança de branch é inserida neste log;
+Já o git log, que vimos anteriormente, apenas armazena os commits de
+um branch;
+Expira em 30 dias por padrao.
+-----------------------------
+git archive --format zip --output master_files.zip master
+Esse comando é para zipar a branch master toda.
+------------------------
+Branches com commits ruins
+• Há uma solução chamada private branches;
+• Onde criamos branches que não serão compartilhados no
+repositório, então podemos colocar qualquer commit;
+• Ao fim da solução do problema podemos fazer um rebase;
+• O comando será: git rebase < atual> < funcionalidade> -i
+• Escolhemos os branches para excluir (squash) e renomear com
+(reword);
+--------------------------

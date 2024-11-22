@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Matheus Crosciati</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Dev Icon Fonts -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- CSS do projeto -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -17,18 +24,52 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Portifólio</h1>
-        <p>Aqui estão alguns dos trabalhos que já fiz.</p>
-        <ul>
-            <li>Exemplo 1</li>
-            <li>Exemplo 1</li>
-            <li>Exemplo 1</li>
-        </ul>
+    <main id="container">
+        <!-- Aqui tá a barra lateral, por isso o uso do aside. -->
+        <aside id="bio-container">
+            <h1>Matheus Crosciati</h1>
+            <img id="bio-img" src="img/20240701_085605.jpg" alt="Foto de Matheus Crosciati">
+            <p>Sou o Matheus e estou estudando para ser um <span>desenvolvedor Fullstack</span>.</p>
+            <p id="texto-rede">Minhas redes sociais:</p>
+            <ul id="social-container">
+                <li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li> 
+                <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><a href="mailto:matheus.gcrosciati@gmail.com">matheus.gcrosciati@gmail.com</a>
+            </div>
+        </aside>
+        <!-- Aqui vai a parte principal de conteudo, no centro da página -->
+        <section id="about-container">
+            <h1 id="name">Matheus Crosciati</h1>
+            <p id="title">Desenvolvedor</p>
+            <p id="description">Estudante de ADS em busca de se tornar um desenvolvedor fullstack.</p>
+            <p id="description">O meu foco é desempenhar bem em ambos o front-end quanto no back-end.</p>
+            <a href="#" id="btn-project"><ion-icon name="share-social-outline"></ion-icon><span>Projetos</span></a>
+            <!-- Colocar o link do github aqui, e o icone de compartilhar -->
+            <h2 id="conhecimentos-section-title">Meus Conhecimentos</h2>
+            <div id="conhecimentos-container">
+                <div class="conhecimentos-box">
+                    <p class="conhecimentos-title">Linguagens que tenho familiaridade</p>
+                    <!-- Colocar o icone em cada title com a tag i -->
+                    <!-- Javascript -->
+                     <i class="devicon-javascript-plain colored"></i>
+                    <!-- C -->
+                    <i class="devicon-c-plain colored"></i>
+                    <!-- Python -->
+                    <i class="devicon-python-plain colored"></i>
+                </div>
+            </div>
+        </section>
+       
     </main>
     
     <footer>
         &copy; 2024 Matheus Giuseppe Crosciati
     </footer>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
