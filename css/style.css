@@ -50,10 +50,12 @@
 /* Bio container */
 
 #bio-img {
-    width: 150px;
+    width: 200px;
     height: 200px;
-    border-radius: 13%;
+    border-radius: 100px;
     margin-bottom: 20px;
+    object-fit: cover;
+    object-position: 100% 5%;
 }
 
 #bio-container h1 {
@@ -186,6 +188,11 @@
 .conhecimentos-box i {
     font-size: 45px;
     margin-right: 10px;
+}
+
+#rodape {
+    display: flex;
+    justify-content: center;
 }
 
 /* Responsividade mobile */
