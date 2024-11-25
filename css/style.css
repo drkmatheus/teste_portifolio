@@ -25,6 +25,86 @@
 
 /* Estilizando os containeres */
 
+#index-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-text-color);
+    min-height: 100vh;
+    background-color: var(--bio-bg-color);
+}
+
+#cumprimento {
+    font-size: 100px;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-bottom: solid 2px var(--bio-border-color);
+}
+
+h3 {
+    font-size:  60px;
+    margin-bottom: 35px;
+}
+
+.paragr-destaque{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;           /* Usa flexbox para o layout */
+    flex-direction: column;  /* Organiza os itens em uma coluna */
+    gap: 30px;               /* Espaço entre os campos */
+    width: 800px;        /* Define uma largura máxima para o formulário */
+    margin: 0 auto;          /* Centraliza o formulário na página */
+    padding: 20px;           /* Adiciona um pouco de preenchimento */
+    border: 1px solid #ddd; /* Adiciona uma borda sutil */
+    border-radius: 8px;      /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo leve */
+}
+
+#campo-nome, #campo-email, #campo-msg {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: black;
+    font-weight: bold;   /* Torna os rótulos (labels) em negrito */
+    margin-bottom: 5px;  /* Espaçamento entre o label e o input */
+}
+
+input, textarea {
+    padding: 10px;       /* Adiciona preenchimento interno aos campos */
+    border: 1px solid #ccc; /* Borda sutil ao redor dos campos */
+    border-radius: 4px;  /* Bordas arredondadas nos campos */
+    font-size: 18px;     /* Tamanho de fonte */
+}
+
+textarea {
+    resize: vertical;    /* Permite que o usuário redimensione a altura da área de texto */
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF; /* Cor da borda quando o campo está em foco */
+    outline: none;        /* Remove o contorno padrão do navegador */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 #menu {
     display: flex;
     justify-content: center;
@@ -35,7 +115,7 @@
 #container {
     display:flex;
     flex-direction: row;
-    color: var(--main-text-color)
+    color: var(--main-text-color);
 }
 
 #bio-container {

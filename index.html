@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Matheus Crosciati</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Dev Icon Fonts -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre mim</a>
-            <a href="formacao.html">Formação</a>
-            <a href="portifolio.html">Portifólio</a>
-            <a href="contatos.html">Contato</a>
-        </nav>
-    </header>
+    <div id="menu">
+        <header>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="formacao.html">Formação</a>
+                <a href="portifolio.html">Portifólio</a>
+                <a href="contatos.html">Contato</a>
+            </nav>
+        </header>
+    </div>
 
-    <main>
-        <h2>👋 Oi, Bem-Vindo ao meu currículo.</h2>
+    <main id="index-container">
+        <h2 id="cumprimento">👋 Oi, <br> Bem-Vindo ao meu currículo.</h2>
         <h3>Sou o Matheus!</h3>
-        <p>Estou na área da tecnologia e desenvolvimento a 4 meses até então.</p>
-        <p>Por enquanto estudante de programação. Estudando para ser um desenvolvedor Full-Stack.</p>
-        <p>📚 Procurando sempre <span id="destaque1">aprender</span> mais a cada dia!
-        <p>Sou formado em <span id="destaque2">Administração</span> pela UEL.</p>
-        <p>Fiz o <span id="cs50">CS50x</span></p>
+        <p class="paragr-destaque">Estou na área da tecnologia e desenvolvimento a 4 meses até então.</p>
+        <p class="paragr-destaque">Por enquanto estudante de programação. Estudando para ser um desenvolvedor Full-Stack.</p>
+        <p class="paragr-destaque">📚 Procurando sempre <span class="highlight">aprender</span> mais a cada dia!
+        <p class="paragr-destaque">Sou formado em <span class="highlight">Administração</span> pela UEL.</p>
+        <p class="paragr-destaque">Fiz o <span class="highlight">CS50x</span></p>
     </main>
     
-    <footer>
-        &copy; 2024 Matheus Giuseppe Crosciati
-    </footer>
+    <div>
+        <footer id="rodape">
+            &copy; 2024 Matheus Giuseppe Crosciati
+        </footer>
+    </div>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
