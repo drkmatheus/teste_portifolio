@@ -25,6 +25,13 @@
 
 /* Estilizando os containeres */
 
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
 #container {
     display:flex;
     flex-direction: row;
@@ -193,6 +200,8 @@
 #rodape {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 30px;
 }
 
 /* Responsividade mobile */
