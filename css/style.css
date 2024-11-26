@@ -30,7 +30,7 @@
     flex-direction: column;
     text-align: center;
     color: var(--main-text-color);
-    min-height: 100vh;
+    min-height: 90.6vh;
     background-color: var(--bio-bg-color);
 }
 
@@ -44,6 +44,14 @@
 h3 {
     font-size:  60px;
     margin-bottom: 35px;
+}
+
+h3:hover {
+    color: aquamarine;
+}
+
+.padding {
+    padding-top: 15px;
 }
 
 .paragr-destaque{
@@ -109,7 +117,26 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    background-color: #0056b3;
+    height: 60px;
+    
+}
+
+#menu nav {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+    color: aquamarine;
 }
 
 #container {
@@ -281,7 +308,10 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 60px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff79;
 }
 
 /* Responsividade mobile */
