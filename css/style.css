@@ -1,12 +1,12 @@
-/* CSS Reset */
+/* CSS Reset que remove margens, preenchimentos e define o box-sizing para todos os elementos */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif; /* Define a fonte global */
 }
 
-/* Variáveis */
+/* Variáveis que definem cores e valores reutilizáveis em todo o CSS */
 
 :root {
     --main-color: #54b689;
@@ -98,6 +98,7 @@ input:focus, textarea:focus {
     outline: none;        /* Remove o contorno padrão do navegador */
 }
 
+/* Estilo do botão */
 button {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -140,6 +141,7 @@ button:hover {
     color: aquamarine;
 }
 
+/* Estilos do container em geral */
 #container {
     display:flex;
     flex-direction: row;
@@ -164,12 +166,13 @@ button:hover {
 
 /* Bio container */
 
+/* Estilo da imagem de perfil */
 #bio-img {
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 100px; /* Faz a imagem ficar circular */
     margin-bottom: 20px;
-    object-fit: cover;
+    object-fit: cover; /* Preenche o contêiner mantendo a proporção */
     object-position: 100% 5%;
 }
 
@@ -185,6 +188,7 @@ button:hover {
     font-weight: bold;
 }
 
+/* Estilo para os ícones de redes sociais */
 #social-container {
     display: flex;
     justify-content: center;
@@ -204,6 +208,7 @@ button:hover {
     font-size: 30px;
 }
 
+/* Estilos do contêiner de e-mail */
 #email-container {
     display: flex;
     justify-content: center;
@@ -227,6 +232,7 @@ button:hover {
     max-width: 20px;
 }
 
+/* Estilo do nome e título na bio */
 #name {
     font-size: 42px;
     margin-bottom: 15px;
@@ -243,6 +249,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
+/* Estilo para o botão <projeto> */
 #btn-project {
     font-weight: bold;
     font-size: 16px;
@@ -270,9 +277,10 @@ button:hover {
 }
 
 #btn-project:hover {
-    background-color: transparent;
+    background-color: transparent; /* Altera a cor de fundo ao passar o mouse */
 }
 
+/* Estilos do título da seção de conhecimentos */
 #conhecimentos-section-title {
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
@@ -280,12 +288,14 @@ button:hover {
     font-size: 32px;
 }
 
+/* Estilos para o container de conhecimentos */
 #conhecimentos-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
 }
 
+/* Estilo das caixas de conhecimentos */
 .conhecimentos-box {
     flex: 1 1 33%;
     max-width: 33%;
@@ -305,6 +315,14 @@ button:hover {
     margin-right: 10px;
 }
 
+/* Estilos do contador de caracteres */
+#contador {
+    text-align: right;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Estilos do rodapé */
 #rodape {
     display: flex;
     justify-content: center;

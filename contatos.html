@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contatos - Matheus Crosciati</title>
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!-- Dev Icon Fonts -->
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-        <!-- CSS do projeto -->
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Matheus Crosciati</title>
+    
+    <!-- Link para fontes do Google Fonts (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Importando ícones de desenvolvedor com Devicon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- Link para o CSS personalizado do projeto -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
     <div id="menu">
         <header>
             <nav>
+                <!-- Links de navegação para diferentes páginas -->
                 <a href="index.html">Início</a>
                 <a href="sobre.html">Sobre mim</a>
                 <a href="formacao.html">Formação</a>
@@ -26,31 +30,42 @@
         </header>
     </div>
 
+    <!-- Conteúdo principal da página -->
     <main id="index-container">
+        <!-- Título da seção de Contato -->
         <h2 class="padding">Contato</h2>
-        <p class="paragr-destaque">Fique a vontade para entrar em contato comigo preenchendo o formulario abaixo.</p>
         
+        <!-- Mensagem incentivando o contato -->
+        <p class="paragr-destaque">Fique à vontade para entrar em contato comigo preenchendo o formulário abaixo.</p>
+        
+        <!-- Formulário de contato -->
         <form class="formulario">
+            <!-- Campo para o nome -->
             <div id="campo-nome">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" required>
             </div>
             
+            <!-- Campo para o email -->
             <div id="campo-email">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
+            <!-- Campo para a mensagem -->
             <div id="campo-msg">
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <p id="contador">0/500 caracteres</p>
             </div>
 
+            <!-- Botão para enviar o formulário -->
             <button id="botao" type="submit">Enviar</button>
         </form>
 
     </main>
 
+    <!-- Rodapé do site -->
     <div>
         <footer id="rodape">
             &copy; 2024 Matheus Giuseppe Crosciati
@@ -59,5 +74,7 @@
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="./script/script.js"></script>
 </body>
 </html>
